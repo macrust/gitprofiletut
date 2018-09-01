@@ -27,7 +27,7 @@ class App extends Component {
             <NavItem eventKey={2} href="#" onClick={() => this.setState({currentTab:'profile'})}>Profile</NavItem>
           </Nav>
         </Navbar>
-        <div className="container">
+        <div className="container"><h1>Test</h1>
         {this.state.currentTab==='slider' ? <Slider /> : false }
         {this.state.currentTab==='profile' ? <Profile /> : false }
         </div>
