@@ -4,6 +4,14 @@ import React, { Component } from 'react';
 
 class Profile extends Component {
     
+  constructor(props) {
+    super(props);
+    this.state = {
+      userInfo : {}
+    }
+
+
+  }
 
     componentDidMount() {
         let header = new Headers({"Content-Type":"application/json","Authorization":"token KEY"});
@@ -13,10 +21,10 @@ class Profile extends Component {
         headers: header
         
     })
-    .then(response => response.json()).then(json => {console.log(json)}).catch(error => {console.log(error)});
+    .then(response => response.json()).then(json => {this.setState ({userInfo : json})}).catch(error => {console.log(error)});
 
     
-      //65dc0c6779b2c89855cf597907ad9a97820c8dc8
+     
       }
 
   render() {
