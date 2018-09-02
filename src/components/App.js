@@ -23,8 +23,8 @@ class App extends Component {
             </Navbar.Brand>
           </Navbar.Header>
           <Nav pullRight>
-            <NavItem eventKey={1} href="#"  onClick={() => this.setState({currentTab:'slider'})}>Slider</NavItem>
-            <NavItem eventKey={2} href="#" onClick={() => this.setState({currentTab:'profile'})}>Profile</NavItem>
+            <NavItem eventKey={1} href="#slider"  onClick={() => this.setState({currentTab:'slider'})}>Slider</NavItem>
+            <NavItem eventKey={2} href="#profile" onClick={() => this.setState({currentTab:'profile'})}>Profile</NavItem>
           </Nav>
         </Navbar>
         <div className="container"><h1>Test</h1>
